@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MyPhotos</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/myPhto.css') }}">
+</head>
+<body>
+<h1 class="title">Your Gallery</h1>
+
+<form class="formStyle" method="post" action="/addPhtos/{{user}}" enctype="multipart/form-data">
+    <input class="custom-file-input" type="file" name="file[]" accept="image/png , image/jpeg , image/jpg" multiple >
+    <br>
+    <input type="submit">
+
+</form>
+<div id="gallry">
+
+    {% for p in phtos %}
+       <img width="200px" height="200px" src="{{ url_for('static', filename=p) }}">
+    {% endfor %}
+</div>
+
+</body>
+</html>

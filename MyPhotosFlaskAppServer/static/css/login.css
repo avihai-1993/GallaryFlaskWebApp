@@ -1,0 +1,33 @@
+*{
+margin:10px
+}
+body {
+    margin: 0;
+    padding-left: 30%;
+    padding-right: 30%;
+    background-color:rgb(153, 170, 187) ;
+}
+form {
+
+    margin-top: 80px;
+}
+
+.inp{
+
+width : 100%
+hight : 10%
+}
+
+.title{
+font-family: "Comic Sans MS", cursive, sans-serif;
+font-size: 30px;
+letter-spacing: 1.6px;
+word-spacing: 1.6px;
+color: #000000;
+font-weight: 700;
+text-decoration: none;
+font-style: italic;
+font-variant: normal;
+text-transform: none;
+text-align: center;
+}
